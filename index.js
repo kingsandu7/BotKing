@@ -12,14 +12,7 @@ client.on('message', msg => {
 });
 
 client.login('token'); 
-    
-bot.on('guildMemberAdd', member => {
-    member.createDM().then(channel => {
-        return channel.send('Bienvenue sur le serveur' + member.displayName)
-        console.log(`${member.displayName} à rejoind le serveur.`)
-    }).catch(console.error)
-});
-
+   
 const ban = require('./kick et ban/ban');
 require('./embed/RichEmbed');
 
