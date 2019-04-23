@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const cfg - require('./index.json'); 
+const Discord require('index.js');
 const token = process.env.token; 
 const prefix = ("?");
 
