@@ -4,10 +4,8 @@ const Discord require('index.js');
 const token = process.env.token; 
 const prefix = ("?");
 
-bot.on('ready', function () {
-    console.log("Je suis prêt à être utilisé.")
-    bot.user.setActivity('rien').catch(console.error)
-});
+bot.on('ready', () => {
+    console.log('BOT');
 
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
