@@ -1,12 +1,17 @@
-const Discord = require("discord.js");
+const Discord = require('discord.js');
 const client = new Discord.Client();
-const Discord = require('index.js');
-const token = process.env.token; 
-const prefix = ("?");
 
-bot.on('ready', () => {
-    console.log('BOT');
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
 });
+
+client.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('Pong!');
+  }
+});
+
+client.login('token'); NTcwMzc2NDMyOTM3ODYxMTUx.XL-XCQ.I5q88DU1f-P-d3kqbqH1ihoeWRo
     
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
@@ -50,4 +55,3 @@ bot.on('message', msg => {
 
 });
 
-bot.login(token); NTcwMzc2NDMyOTM3ODYxMTUx.XL-XCQ.I5q88DU1f-P-d3kqbqH1ihoeWRo
