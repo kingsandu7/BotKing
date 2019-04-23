@@ -11,7 +11,7 @@ client.on('message', msg => {
   }
 });
 
-client.login('token'); NTcwMzc2NDMyOTM3ODYxMTUx.XL-XCQ.I5q88DU1f-P-d3kqbqH1ihoeWRo
+client.login('token'); 
     
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
