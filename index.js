@@ -5,19 +5,4 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
-  }
-});
-
-client.login('token'); 
-   
-const ban = require('./kick et ban/ban');
-require('./embed/RichEmbed');
-
-bot.on('message', function (message){
-    if (ban.match(message)){
-        return ban.action(message)
-    }
-});
+client.login('token');
